@@ -6,7 +6,9 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     selector: 'my-app',
     template: `
         <navbar></navbar>
-        <router-outlet></router-outlet>
+        <div class="container">
+            <router-outlet></router-outlet>
+        </div>
     `,
     directives: [NavbarComponent]
 })
