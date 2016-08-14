@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from './user.service';
 
 @Component({
-    selector: 'users',
     template: `
         <h1>Users</h1>
+        <a class="btn btn-primary" routerLink="/users/new">New User</a><br><br>
         <table class="table table-bordered">
             <thead>
                 <tr>
