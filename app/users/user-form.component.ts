@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, ControlGroup } from '@angular/common';
+import { FormBuilder, ControlGroup, Validators } from '@angular/common';
 
 @Component({
     templateUrl: 'app/users/user-form.component.html'
@@ -9,8 +9,8 @@ export class UserFormComponent {
 
     constructor(builder: FormBuilder) {
         this.form = builder.group({
-            name: [],
-            email: [],
+            name: ['', Validators.required],
+            email: ['', Validators.required],
             phone: [],
             address: builder.group({
                 street: [],
